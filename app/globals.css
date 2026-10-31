@@ -8,6 +8,7 @@
 --gray: #9CA3AF;
 --gray-light: #D1D0D8;
 --coral: #FB7185;
+--cherry: #D2232A;
 
 --lavender: #F3F0FF;
 --lavender-deep: #EEE9FF;
@@ -36,10 +37,15 @@
   --color-steel-blue: var(--steel-blue);
   --color-baby-blue: var(--baby-blue);
   --color-blue-gray: var(--blue-gray);
+  --color-cherry: var(--cherry);
+  --animate-spin-once: spin-once 0.4s ease-in-out;
 
 }
 
-
+@keyframes spin-once {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
 body {
   background: var(--background);

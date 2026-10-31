@@ -28,7 +28,7 @@
                   }
                   
                   const roles = userDoc.data().roles;
-                  if (roles.includes("t eacher") || roles.includes("admin")) {
+                  if (roles.includes("teacher") || roles.includes("admin")) {
                       router.push("/teacher");
                   } else {
                       setError("This Account Does Not Have Educator Access");
